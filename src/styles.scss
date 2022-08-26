@@ -1,0 +1,154 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.font-montserrat {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.font-mulish {
+  font-family: 'Mulish', sans-serif;
+}
+
+* {
+  font-family: 'Montserrat', sans-serif;
+}
+
+p {
+  font-family: 'Mulish', sans-serif;
+}
+.header-title{
+  @apply lg:pl-8 md:pl-8 sm:pl-4 pl-2 lg:text-2xl md:text-2xl text-xl lg:tracking-[.55em] md:tracking-[.35em] sm:tracking-[.25em]
+}
+.logo-container{
+  @apply flex justify-end items-center w-1/3 lg:pr-20 md:pr-16 sm:pr-6 pr-4 relative
+}
+.logo{
+  @apply lg:h-40 md:h-36 sm:h-24 h-14 w-auto absolute
+}
+.domain-name{
+  @apply lg:pl-28 md:pl-20 sm:pl-8 pl-2 font-bold lg:text-xl md:text-xl pt-4
+}
+.describe-title{
+  @apply lg:text-4xl md:text-3xl sm:text-2xl text-xl font-bold
+}
+.describe-line1{
+  @apply flex lg:w-5/6 md:w-5/6 lg:ml-10 md:ml-10 border-t-2 border-green relative top-4
+}
+.describe-line23{
+  @apply flex lg:w-5/6 md:w-4/6 lg:ml-10 md:ml-10 border-t-2 border-green relative top-4
+}
+.body-top{
+  background-image: url('https://tailwindui.com/img/ecommerce-images/product-page-02-tertiary-product-shot-01.jpg');
+  background-size: cover;
+  width: 100%;
+  height: 90vh;
+}
+.body-top-text{
+  font-size: 6rem!important;
+  padding: 3.5vh 3vw;
+}
+.body-top-price{
+  font-size: 6rem!important;
+  letter-spacing: 0.13em;
+}
+.body-boder{
+  margin: 0 6.5vw;
+}
+
+
+
+.contact-info{
+  @apply lg:flex md:flex sm:flex-wrap justify-end pt-2 lg:text-xl md:text-xl sm:text-lg text-base lg:text-left md:text-left sm:text-center text-center
+}
+.contact-line{
+  @apply flex lg:w-5/6 md:w-5/6 lg:ml-10 md:ml-10 border-t-2 border-green relative top-4
+}
+
+@media only screen and (max-width: 1500px){
+    .body-top-text{
+      font-size: 5.5rem!important;
+    }
+    .body-top-price{
+      font-size: 5.5rem!important;
+      letter-spacing: 0.01em;
+    }
+    .body-boder{
+      margin: 0 6vw;
+    }
+}
+@media only screen and (max-width: 1300px){
+    .body-top-text{
+      font-size: 5rem!important;
+    }
+    .body-top-price{
+      font-size: 5rem!important;
+    }
+}
+@media only screen and (max-width: 1200px){
+    .body-top-text{
+      font-size: 4.5rem!important;
+    }
+    .body-top-price{
+      font-size: 4.5rem!important;
+    }
+    .body-top{
+      height: 80vh;
+    }
+}
+@media only screen and (max-width: 900px){
+    .body-top-text{
+      font-size: 4rem!important;
+    }
+    .body-top-price{
+      font-size: 4rem!important;
+    }
+    .body-top{
+      height: 70vh;
+    }
+}
+@media only screen and (max-width: 700px){
+    .body-top-text{
+      font-size: 3rem!important;
+    }
+    .body-top-price{
+      font-size: 3rem!important;
+    }
+    .body-top{
+      height: 50vh;
+    }
+    .body-top-text{
+      padding: 0.5vh 0.5vw;
+    }
+    .body-boder{
+      margin: 0 10vw;
+    }
+}
+@media only screen and (max-width: 460px){
+    .body-top-text{
+      font-size: 2rem!important;
+    }
+    .body-top-price{
+      font-size: 2rem!important;
+    }
+    .body-top{
+      height: 40vh;
+    }
+    .body-top-text{
+      padding: 0.1vh 0.1vw;
+    }
+    .body-boder{
+      margin: 0 12vw;
+    }
+}
+@media only screen and (max-width: 400px){
+    .body-top{
+      height: 50vh;
+    }
+    .body-top-text{
+      padding: 0.1vh 0.1vw;
+    }
+    .body-boder{
+      margin-left: 20vw!important;
+    }
+}
